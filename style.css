@@ -1,0 +1,65 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* font-family: 'sans-serif'; */
+   font-family: 'Comic sans ms';
+}
+
+body {
+   height: 100vh;
+   background-image: url(./images/pexels-lukas-rychvalsky-939807.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: grid;
+   place-items: center;
+}
+
+.clock {
+   display: flex;
+   gap: 2em;
+   text-align: center;
+}
+
+.clock div {
+   position: relative;
+}
+
+.clock span {
+   background-color: #fff;
+   font-size: 3.3rem;
+   width: 150px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 1px;
+}
+
+.clock .text {
+   height: 40px;
+   font-size: 1.3rem;
+   background-color: silver;
+   text-transform: uppercase;
+}
+
+.clock #ampm {
+   position: absolute;
+   bottom: 0;
+   width: 100px;
+   height: 40px;
+   font-size: 1.3rem;
+   background-color: silver;
+}
+
+@media (max-width: 728px) {
+   .clock {
+      flex-direction: column;
+      gap: 1em;
+   }
+
+   .clock #ampm {
+      top: 0;
+   }
+}
